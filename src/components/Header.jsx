@@ -14,6 +14,7 @@ const Header = () => {
                     disabled = {isPending} 
                     onClick={logout}
                     className={`outline outline-1 py-2 px-4 rounded-md`}>
+                        Logout
                     </button>
                 </header>
             )
