@@ -13,8 +13,7 @@ const Header = () => {
                     <button 
                     disabled = {isPending} 
                     onClick={logout}
-                    className={`outline outline-1 py-2 px-4 rounded-md ${error ? 'text-red-600' : ""}`}>
-                    {error ? "Error Occured" : "Logout"}    
+                    className={`outline outline-1 py-2 px-4 rounded-md`}>
                     </button>
                 </header>
             )

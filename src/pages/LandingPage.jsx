@@ -29,7 +29,7 @@ const LandingPage = () => {
         width={36} 
         src='/github.svg' />
       </a>
-      {error && <p className='text-red-700'>{error.message}</p>}
+      {error && <p className='text-red-700'>{error}</p>}
     </div>
   )
 }

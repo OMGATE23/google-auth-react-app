@@ -1,13 +1,16 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom'
 import { useAuthContext } from '../hooks/useAuthContext'
+import { useLogout } from '../hooks/useLogout'
 
 const HomePage = () => {
   const {user} = useAuthContext()
+  const {error} = useLogout()
   const {email, displayName , photoURL , uid} = user
   console.log(user)
   return (
     <div className='flex items-center justify-center flex-col gap-8 my-8'>
+      {error && <p className='text-lg text-red-600' >{error}</p>}
       <h1 className='text-center text-3xl  md:text-5xl font-bold'>Hello, {displayName}</h1>
       <h2 className=' text-xl md:text-2xl text-gray-700 '>Only logged in users can see this page!</h2>
       <div className='outline outline-1 flex items-center justify-center flex-col gap-4 text-lg md:text-xl p-6 outline-gray-300 rounded-md shadow-md bg-gray-50'>
