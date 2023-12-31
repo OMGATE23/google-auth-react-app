@@ -29,6 +29,14 @@ const HomePage = () => {
           </a>
         </div>
       </div>
+      <a 
+      href='https://github.com/OMGATE23/google-auth-react-app' 
+      className='my-4 px-4 py-2 text-xl bg-black text-white outline outline-1 rounded-md flex items-center gap-2'>
+        Check the code 
+        <img className='bg-white rounded-full' 
+        width={36} 
+        src='/github.svg' />
+      </a>
     </div>
   )
 }

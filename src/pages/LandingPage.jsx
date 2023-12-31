@@ -20,6 +20,15 @@ const LandingPage = () => {
         className='text-xl outline outline-1 py-2 px-4 rounded-md'
         onClick={login}
       >Login using Google</button>
+
+      <a 
+      href='https://github.com/OMGATE23/google-auth-react-app' 
+      className='my-4 px-4 py-2 text-xl bg-black text-white outline outline-1 rounded-md flex items-center gap-2'>
+        Check the code 
+        <img className='bg-white rounded-full' 
+        width={36} 
+        src='/github.svg' />
+      </a>
       {error && <p className='text-red-700'>{error.message}</p>}
     </div>
   )
