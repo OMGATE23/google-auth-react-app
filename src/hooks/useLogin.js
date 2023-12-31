@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAuthContext } from "./useAuthContext";
-import { auth , provider } from "@/firebase/config";
+import { auth , provider } from "../firebase/config"
 import { signInWithPopup, signInWithRedirect } from "firebase/auth";
 
 export default function useLogin() {
